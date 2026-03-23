@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url(leovullings-lighthouse-9183463.jpg);
+    width: 100%;
+    background-size: cover;
+}
+img{
+    width: 150px;
+
+}
+
+section{
+   max-width: 500px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+span{
+    width: 40px;
+    background-color: #200;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+section:nth-child(1),
+section:nth-child(3){
+    background-color: #410b13;
+    color: white;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 4fr 1fr ;
+    gap: 10px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
