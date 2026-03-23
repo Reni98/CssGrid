@@ -42,6 +42,39 @@ div{
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 10px;
+}
+@media (max-width: 1200px){
+    main{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+@media (max-width: 600px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+    }
+    div{
+    display: grid;
+    grid-template-columns: 2fr ;
+    gap: 10px;
+    text-align: center;
+}
+    
+img{
+    margin: 0 auto;
+}
+}
+
+@media (max-width: 300px){
+    main{
+        grid-template-columns: repeat(1,1fr);
+    }
+     div{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 10px;
+}
+    
 }
